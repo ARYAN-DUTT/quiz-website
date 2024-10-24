@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.navbar {
+    display : flex;
+    flex-direction: rows;
+    gap: 20%;
+    justify-content: center;
+    border-bottom: 2px solid black;
+    height: 32px;
+    box-shadow: 0px 0px 10px black;
+    padding-top: 14px;
+    margin-bottom: 50px;
+}
+.bar {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+.quiz-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px black;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid black;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: black;
+    color: rgb(141, 141, 141);
+    padding: 10px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 20px;
+    border: 1px solid black;
+}
+
+.btn:disabled {
+    background-color: white;
+    cursor: not-allowed;
+    color: white;
+    border: none;
+    
+}
+
+.hidden {
+    display: none;
+}
+
+.options {
+    list-style: none;
+    padding: 0;
+}
+
+.options li {
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid black;
+    transition: 0.3s;
+}
+
+.options li:hover {
+    background-color: black;
+    color: rgb(141, 141, 141);
+}
+
+.options li.selected {
+    background-color: rgb(141, 141, 141);
+    color: #000;
+}
